@@ -5,7 +5,8 @@ from player import Player
 
 class Artint(Player):
   def __init__(self):
-    pass
+    self.gesture = ()
+    super().__init__('artificial_intelligence')
 
   def artint_opponent(self):
-    pass
+    Player.gesture = ()

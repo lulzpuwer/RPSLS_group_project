@@ -3,7 +3,8 @@ from player import Player
 
 class Human(Player):
   def __init__(self):
-    super().__init__()
+    self.gesture = ()
+    super().__init__('Bob')
 
   def human_one(self, opponent):
     pass
