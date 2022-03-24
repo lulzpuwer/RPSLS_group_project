@@ -19,7 +19,7 @@ class Game():
     self.display_welcome()
     self.display_rules()
     self.choose_game_mode()
-    self.display_winner()
+  
 
   def display_welcome(self):
     print('++++ Welcome to Rock, Paper, Scissor, Lizard, Spock! ++++')
@@ -136,13 +136,13 @@ class Game():
 
 
   def display_winner(self):
-    while self.win_counter == 2 or self.multi_win_counter == 2:
+    if self.win_counter == 2 or self.multi_win_counter == 2:
       if self.win_counter == 2:
         print('player 1 wins! ')
-        break
+       
       elif self.multi_win_counter == 2:
         print('player 2 wins! ')
-        break
+      
     else:
       self.player_turn()
     
