@@ -71,12 +71,12 @@ class Game():
     print(f'Player one played {self.player_gesture}! ')
     print(f'player two played {self.player_two_gesture}! ')
     if self.player_gesture == self.human.gesture[0]:
-      while self.player_two_gesture == self.human.gesture[1] or self.player_two_gesture == self.human.gesture[4]:
+      if self.player_two_gesture == self.human.gesture[1] or self.player_two_gesture == self.human.gesture[4]:
         self.multi_win_counter += 1
         print(f'You lost! player two score {self.multi_win_counter}')
         self.display_winner()
-        break
-      if self.player_two_gesture == self.human.gesture[2] or self.player_two_gesture == self.human.gesture[3]:
+        
+      elif self.player_two_gesture == self.human.gesture[2] or self.player_two_gesture == self.human.gesture[3]:
         self.win_counter += 1
         print(f' You have won! current win counter : {self.win_counter}')
         self.display_winner()
@@ -84,11 +84,12 @@ class Game():
         print('+++++ Draw! +++++')
         self.display_winner()
     elif self.player_gesture == self.human.gesture[1]:
-      while self.player_two_gesture == self.human.gesture[2] or self.player_two_gesture == self.human.gesture[3]:
+      if self.player_two_gesture == self.human.gesture[2] or self.player_two_gesture == self.human.gesture[3]:
         self.multi_win_counter += 1
         print(f'You lost! player two score {self.multi_win_counter}')
         self.display_winner()
-      if self.player_two_gesture == self.human.gesture[0] or self.player_two_gesture ==  self.human.gesture[4]:
+        
+      elif self.player_two_gesture == self.human.gesture[0] or self.player_two_gesture ==  self.human.gesture[4]:
         self.win_counter += 1
         print(f' You have won! current win counter : {self.win_counter}')
         self.display_winner()
@@ -96,11 +97,12 @@ class Game():
         print('+++++ Draw! +++++')
         self.display_winner()
     elif self.player_gesture == self.human.gesture[2]:
-      while self.player_two_gesture == self.human.gesture[0] or self.player_two_gesture == self.human.gesture[4]:
+      if self.player_two_gesture == self.human.gesture[0] or self.player_two_gesture == self.human.gesture[4]:
         self.multi_win_counter += 1
         print(f'You lost! player two score {self.multi_win_counter}')
         self.display_winner()
-      if self.player_two_gesture == self.human.gesture[1] or self.player_two_gesture ==  self.human.gesture[3]:
+        
+      elif self.player_two_gesture == self.human.gesture[1] or self.player_two_gesture ==  self.human.gesture[3]:
         self.win_counter += 1
         print(f' You have won! current win counter : {self.win_counter}')
         self.display_winner()
@@ -108,11 +110,12 @@ class Game():
         print('+++++ Draw! +++++')
         self.display_winner()
     elif self.player_gesture == self.human.gesture[3]:
-      while self.player_two_gesture == self.human.gesture[2] or self.player_two_gesture == self.human.gesture[0]:
+      if self.player_two_gesture == self.human.gesture[2] or self.player_two_gesture == self.human.gesture[0]:
         self.multi_win_counter += 1
         print(f'You lost! player two score {self.multi_win_counter}')
         self.display_winner()
-      if self.player_two_gesture == self.human.gesture[1] or self.player_two_gesture ==  self.human.gesture[4]:
+       
+      elif self.player_two_gesture == self.human.gesture[1] or self.player_two_gesture ==  self.human.gesture[4]:
         self.win_counter += 1
         print(f' You have won! current win counter : {self.win_counter}')
         self.display_winner()
@@ -120,11 +123,12 @@ class Game():
         print('+++++ Draw! +++++')
         self.display_winner()
     elif self.player_gesture == self.human.gesture[4]:
-      while self.player_two_gesture == self.human.gesture[1] or self.player_two_gesture == self.human.gesture[3]:
+      if self.player_two_gesture == self.human.gesture[1] or self.player_two_gesture == self.human.gesture[3]:
         self.multi_win_counter += 1
         print(f'You lost! player two score {self.multi_win_counter}')
         self.display_winner()
-      if self.player_two_gesture == self.human.gesture[0] or self.player_two_gesture ==  self.human.gesture[2]:
+        
+      elif self.player_two_gesture == self.human.gesture[0] or self.player_two_gesture ==  self.human.gesture[2]:
         self.win_counter += 1
         print(f' You have won! current win counter : {self.win_counter}')
         self.display_winner()
