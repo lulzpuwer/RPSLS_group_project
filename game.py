@@ -1,6 +1,7 @@
 from human import Human
 from artint import Artint
 from player import Player
+from gestures import Gesture
 import random
 
 
@@ -70,6 +71,10 @@ class Game():
   def result(self):
     print(f'Player one played {self.player_gesture}! ')
     print(f'player two played {self.player_two_gesture}! ')
+    # if self.player_gesture == self.human.gesture[0]:
+      # self.gestures.gesture_rock()
+      # self.display_winner()
+    # Working Code Below! -- - - -
     if self.player_gesture == self.human.gesture[0]:
       if self.player_two_gesture == self.human.gesture[1] or self.player_two_gesture == self.human.gesture[4]:
         self.multi_win_counter += 1
